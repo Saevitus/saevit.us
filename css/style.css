@@ -1,0 +1,53 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #94d487;
+    margin: 0;
+    font-family: "Roboto",arial,sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+body.unscrollable {
+    overflow-y: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    background: #94d487;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #222;
+}
+
+.logo {
+    height: 88px;
+}
+
+.clear {
+    clear: both;
+    height: 50px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+canvas {
+	position: absolute;
+	width: 500px;
+    height: 500px;
+	right: 50%;
+	left: 50%;
+	bottom: 0px;
+	margin-left: -250px;
+}
