@@ -41,6 +41,10 @@ class cum {
         var rand = random(2, 6);
 
         ellipse(pos.x, pos.y, rand, rand);
+        
+        if (javascript != null) {
+            javascript.play_sound();
+        }
     }
 }
 
@@ -128,9 +132,6 @@ void draw() {
     for (int i = 0; i < cum_list.size(); i++) {
         cum sem = cum_list.get(i);
         sem.display();
-        if (javascript != null) {
-            javascript.play_sound();
-        }
         if (sem.life <= 0) {
             cum_list.remove(i);
         }
