@@ -14,7 +14,7 @@ interface JavaScript {
     void play_sound();
 }
 
-void bind_js(JavaScript js) {
+void bindJavascript(JavaScript js) {
     javascript = js;
 }
 
