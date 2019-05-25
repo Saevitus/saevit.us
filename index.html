@@ -13,9 +13,9 @@
 		var bound = false;
 		
 		function bindJavascript() {
-			var pjs = Processing.getInstanceById("dick");	
+			var pjs = Processing.getInstanceById("@@id@@");	
 			
-			if (pjs = null) {
+			if (pjs != null) {
 				pjs.bindJavascript(this);
 				bound = true;
 			}
