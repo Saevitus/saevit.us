@@ -8,6 +8,8 @@ color dick_color = color(234, 196, 144);
 
 ArrayList < cum > cum_list;
 
+JavaScript javascript;
+
 interface JavaScript {
     void play_sound();
 }
@@ -15,8 +17,6 @@ interface JavaScript {
 void bindJavascript(JavaScript js) {
     javascript = js;
 }
-
-JavaScript javascript;
 
 class cum {
     PVector pos;
