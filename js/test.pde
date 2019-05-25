@@ -43,6 +43,7 @@ class cum {
         ellipse(pos.x, pos.y, rand, rand);
         
         if (javascript != null) {
+            println('working')
             javascript.play_sound();
         }
     }
