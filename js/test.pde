@@ -73,6 +73,9 @@ void change_hardness() {
     }
 
     if (anchor < 101) {
+    if (javascript != null) {
+        javascript.play_sound();
+    }
         ejaculate();
     }
 }
@@ -128,10 +131,6 @@ void draw() {
     }
 
     change_hardness();
-
-    if (javascript != null) {
-        javascript.play_sound();
-    }
 
     for (int i = 0; i < cum_list.size(); i++) {
         cum sem = cum_list.get(i);
