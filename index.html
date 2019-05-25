@@ -9,6 +9,26 @@
 	  
 	<script type="text/javascript">
 		var s0 = new buzz.sound( "org", { formats: [ "mp3" ] });
+		
+		var bound = false;
+		
+		function bind_js() {
+			var pjs = Processing.getInstanceById("dick");	
+			
+			if (pjs = null) {
+				pjs.bindJavascript(this);
+				bound = true;
+			}
+			
+			if (!bound) {
+				setTimeout(bindJavascript, 250);	
+			}
+		}
+		bindJavascript();
+		
+		function play_sound() {
+			s0.play();	
+		}
 	</script>
   </head>
   
@@ -35,6 +55,6 @@
 		
 	</div>
   
-	<canvas data-processing-sources="js/test.pde"></canvas>
+	<canvas id="dick" data-processing-sources="js/test.pde"></canvas>
   </body>
 </html>
