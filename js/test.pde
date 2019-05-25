@@ -8,6 +8,16 @@ color dick_color = color(234, 196, 144);
 
 ArrayList < cum > cum_list;
 
+interface JavaScript {
+    void play_sound();
+}
+
+void bindJavascript(JavaScript js) {
+    javascript = js;
+}
+
+JavaScript javascript;
+
 class cum {
     PVector pos;
     PVector vel;
@@ -118,6 +128,9 @@ void draw() {
     for (int i = 0; i < cum_list.size(); i++) {
         cum sem = cum_list.get(i);
         sem.display();
+        if (javascript != null) {
+            javascript.play_sound();
+        }
         if (sem.life <= 0) {
             cum_list.remove(i);
         }
