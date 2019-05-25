@@ -41,11 +41,6 @@ class cum {
         var rand = random(2, 6);
 
         ellipse(pos.x, pos.y, rand, rand);
-        
-        if (javascript != null) {
-            println('working')
-            javascript.play_sound();
-        }
     }
 }
 
@@ -84,6 +79,10 @@ void change_hardness() {
 void ejaculate() {
     for (int i = 0; i < 3; i++) {
         cum_list.add(new cum(width / 2, anchor));
+        if (javascript != null) {
+            println('working')
+            javascript.play_sound();
+        }
     }
 }
 
