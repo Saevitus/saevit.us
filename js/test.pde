@@ -69,9 +69,6 @@ void change_hardness() {
     }
 
     if (anchor < 101) {
-    if (javascript != null) {
-        javascript.play_sound();
-    }
         ejaculate();
     }
 }
@@ -80,6 +77,7 @@ void ejaculate() {
     for (int i = 0; i < 3; i++) {
         cum_list.add(new cum(width / 2, anchor));
         if (javascript != null) {
+            ellipse(10, 10, 30, 30);
             javascript.play_sound();
         }
     }
