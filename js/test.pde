@@ -77,7 +77,6 @@ void ejaculate() {
     for (int i = 0; i < 3; i++) {
         cum_list.add(new cum(width / 2, anchor));
         if (javascript != null) {
-            line(10, 10, 20, 20 + 10);
             javascript.play_sound();
         }
     }
