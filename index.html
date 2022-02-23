@@ -10,9 +10,37 @@
         .dc {text-align: center; display:block}
     </style>
 
-<audio id="watchlist" controls="hide" autoplay>
+<!--<iframe src="resources/background.mp3" allow="autoplay" id="iframeAudio" volume="0.1">
+
+
+</iframe> 
+
+<audio id="watchlist" controls>
   <source src="resources/background.mp3" type="audio/mp3"/>     
-</audio>
+</audio>-->
+
+<script type = "text/javascript">
+var audioElement = document.createElement('audio');
+audioElement.setAttribute('src', 'resources/background.mp3');
+audioElement.load()
+audioElement.addEventListener("canplay", function() { 
+  audioElement.play(); 
+}, true);
+
+  /*var test = document.getElementById("watchlist");
+  test.volume = 0.1;
+
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }*/
+
+</script>
+
+
 
 </head>
   
