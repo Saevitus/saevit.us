@@ -10,9 +10,14 @@
         .dc {text-align: center; display:block}
     </style>
 
-<audio autoplay="autoplay" volume="0.1">
-  <source src="resources/background.mp3" />     
+<audio autoplay id="watchlist" >
+  <source src="resources/background.mp3"/>     
 </audio>
+
+<script>
+  var audio_vol = document.getElementById("watchlist");
+  audio_vol.volume = 0.07;
+</script>
 
   </head>
   
