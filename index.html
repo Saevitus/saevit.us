@@ -10,13 +10,17 @@
         .dc {text-align: center; display:block}
     </style>
 
-<audio autoplay="watchlist" id="watchlist">
-  <source src="resources/background.mp3"/>     
+<audio id="watchlist" controls="hide" autoplay>
+  <source src="resources/background.mp3" type="audio/mp3"/>     
 </audio>
 
 <script>
   var audio_vol = document.getElementById("watchlist");
   audio_vol.volume = 0.07;
+
+  var test = document.getElementById("watchlist");
+  test.style.display = "block";
+  test.style.display = "none";
 </script>
 
   </head>
