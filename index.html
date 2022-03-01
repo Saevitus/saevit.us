@@ -5,11 +5,6 @@
     <title>Saevit.us</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <style type="text/css">
-        .logo {margin-left: auto; margin-right: auto;}
-        .dc {text-align: center; display:block}
-    </style>
-
 <!--<iframe src="resources/background.mp3" allow="autoplay" id="iframeAudio" volume="0.1">
 
 
@@ -19,25 +14,26 @@
   <source src="resources/background.mp3" type="audio/mp3"/>     
 </audio>-->
 
+<audio id="watchlist">
+  <source src="resources/background.mp3" type="audio/mp3"/>
+</audio>
+
 <script type = "text/javascript">
-var audioElement = document.createElement('audio');
-audioElement.setAttribute('src', 'resources/background.mp3');
-audioElement.load()
-audioElement.addEventListener("canplay", function() { 
-  audioElement.play(); 
-}, true);
+  var audio = document.getElementById("watchlist");
+  audio.volume = 0.07
+  var playing = false;
 
-  /*var test = document.getElementById("watchlist");
-  test.volume = 0.1;
+  function test() {
+    playing ? audio.pause() : audio.play();
+  };
 
-  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  }*/
+  audio.onplaying = function() {
+    playing = true;
+  };
 
+  audio.onpause = function() {
+    playing = false;
+  };
 </script>
 
 
@@ -47,11 +43,6 @@ audioElement.addEventListener("canplay", function() {
   <body class="unscrollable">
   	<div class="wrapper" style="opacity: 1;" >
 		<div class="clear"> </div>
-		<div class="clear"> </div>
-		<div class="clear"> </div>
-		<div class="clear"> </div>
-		<div class="clear"> </div>
-		<div class="clear"> </div>
 		
 		<p>
 			<img alt ="logo m" class="logo" src="resources/white-192-text.png" >
@@ -59,9 +50,11 @@ audioElement.addEventListener("canplay", function() {
 		
 		<span style="font-size:1.05em;" class="dc">saevitus#6666</span>
     <span style="font-size:1.05em;" class="dc">fuck u zane</span>
-		
- 
+
     <img src="resources/xy824lmr2ya41.jpg" alt="conk" height="400" width="400">
+
+    <span style="font-size:1.05em;" class="dc"><button href="#" class="butt" onclick="test()">play/pause song (watchlist alert)</button></span>
+
 
     
 	</div>

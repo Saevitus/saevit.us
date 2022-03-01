@@ -51,3 +51,22 @@ canvas {
 	bottom: 0px;
 	margin-left: -250px;
 }
+
+.logo {margin-left: auto; margin-right: auto;}
+.dc {text-align: center; display:block; padding-bottom: 4px;}
+
+.butt {
+  background-color: #94d487;
+  border: 2px solid #3f5a3a;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.05em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.butt:hover {
+    background-color: #3f5a3a;
+}
