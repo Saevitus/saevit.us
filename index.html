@@ -1,59 +1,68 @@
 <html lang="en-AU">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Saevit.us</title>
-	<link rel="stylesheet" href="css/test.css">
-	<audio id="watchlist">
-		<source src="resources/background.mp3" type="audio/mp3" /> </audio>
+  <meta charset="UTF-8">
+  <title>Saevit.us</title>
+  <link rel="stylesheet" href="css/test.css">
+  <audio id="watchlist">
+    <source src="resources/background.mp3" type="audio/mp3" />
+  </audio>
 
-	<script type="text/javascript">
-	    var audio = document.getElementById("watchlist");
-	    audio.volume = 0.07
-	    var playing = false;
+  <script type="text/javascript">
+    var audio = document.getElementById("watchlist");
+    audio.volume = 0.07
+    var playing = false;
 
-	    function test() {
-		    playing ? audio.pause() : audio.play();
-	    };
+    function test() {
+      playing ? audio.pause() : audio.play();
+    };
 
-	    audio.onplaying = function() {
-		    playing = true;
-	    };
+    audio.onplaying = function () {
+      playing = true;
+    };
 
-	    audio.onpause = function() {
-		    playing = false;
-	    };
-	</script>
+    audio.onpause = function () {
+      playing = false;
+    };
+  </script>
 </head>
 
 <body>
-	<div id="wrapper">
-		<div class="sidebar" style="border:1px solid rgb(48, 44, 44); height: 99%;">
-			<div class="logo">
-				<h1><span class="pink">joms site</h1> </div>
-			<div class="navlist">
-				<ul>
-					<li> <a href="#" class="active">This</a> </li>
-					<li> <a href="is.html">Is</a> </li>
-					<li> <a href="#">A</a> </li>
-					<li> <a href="#">Test</a> </li>
-					<li> <a href="secret.html">Site</a> </li>
-					<li> <a href="#" onclick="test()">Lol</a> </li>
-				</ul>
-			</div>
-		</div>
-    
-		<div id="content">
-			<h3 style="text-align: center;">123123</h3>
-			<p class="center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-		</div>
-	</div>
+  <div id="wrapper">
+    <div class="sidebar" style="border:1px solid rgb(48, 44, 44); height: 99%;">
+      <div class="logo">
+        <h1><span class="pink">joms site</h1>
+      </div>
+      <div class="navlist">
+        <ul>
+          <li> <a href="#" class="active">This</a> </li>
+          <li> <a href="is.html">Is</a> </li>
+          <li> <a href="#">A</a> </li>
+          <li> <a href="#">Test</a> </li>
+          <li> <a href="secret.html">Site</a> </li>
+          <li> <a href="#" onclick="test()">Lol</a> </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="content">
+      <h3 style="text-align: center;">123123</h3>
+      <p class="center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        laudantium, totam rem aperiam,
+        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+        eos qui ratione voluptatem sequi nesciunt.
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+        commodi consequatur?
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+        qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+      <img class="center-img" src="resources/xy824lmr2ya41.jpg" title="test" alt="conk" height="400" width="400" style="cursor: pointer;" onclick="test()">
+
+    </div>
+  </div>
 </body>
 
 </html>

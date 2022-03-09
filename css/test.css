@@ -44,6 +44,7 @@
    .right { float: right;}
    .left { float: left;}
    .center { margin: 0 auto; text-align: center;}
+   .center-img { display: block; margin-left: auto; margin-right: auto; }
    
    
    .sidebar {
@@ -112,7 +113,7 @@
     
    #content p {
        line-height: 1.4em; 
-       font-size: 0.7em; 
+       font-size: 1em; 
        margin-bottom: 20px; 
        margin-left: 25px;
        color: #f4f4f4;
@@ -125,6 +126,7 @@
     letter-spacing: -0.1em;
     margin-bottom: 4px;
     margin-left: 25px;
+    font-size: 2em; 
    }
    
    #content h3:hover { color: #fff;}
