@@ -1,76 +1,26 @@
 html {
+    background-color: #94d487;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+
+    min-width: 100%;
     min-height: 100%;
-}
-
-body {
-    min-height: 100%;
-    background: #94d487;
-    margin: 0;
-    font-family: "Roboto",arial,sans-serif;
-    font-weight: 300;
-    font-size: 1.5em;
-}
-
-body.unscrollable {
-    overflow-y: hidden;
-}
-
-p {
-    margin: 0;
-}
-
-.wrapper {
-    min-height: 100%;
-    background: #94d487;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    color: #222;
-}
-
-.logo {
-    height: 88px;
-}
-
-.clear {
-    clear: both;
-    height: 50px;
-}
-
-.title {
-    font-size: 2em;
-    font-weight: 100;
+    overflow: hidden;
 }
 
 canvas {
-	position: absolute;
-	width: 500px;
-    height: 500px;
-	right: 50%;
-	left: 50%;
-	bottom: 0px;
-	margin-left: -250px;
+    width: 100%;
+    height: 100%;
 }
 
-.logo {margin-left: auto; margin-right: auto;}
-.dc {text-align: center; display:block; padding-bottom: 4px;}
-
-.butt {
-  background-color: #94d487;
-  border: 2px solid #3f5a3a;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.05em;
-  transition-duration: 0.4s;
-  cursor: pointer;
+a {
+    color: #fff;
+    text-decoration: dashed;
+    display: block;
+    padding: 2px;
 }
 
-.butt:hover {
-    background-color: #3f5a3a;
-}
-
-.testimage:hover {
-    
+a:hover {
+    color: #000000;
 }
