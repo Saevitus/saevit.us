@@ -27,7 +27,7 @@ function check_hit_box() {
 
 function update() {
     setTimeout(() => {
-        ctx.fillStyle = '#94d487';
+        ctx.fillStyle = '#b9d8ac';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         
